@@ -8,12 +8,13 @@
     "48": "icon.png",
     "128": "icon.png"
   },
-  "actions": {
+  "action": {
     "default": {
       "16": "icon.png",
       "24": "icon.png",
       "32": "icon.png"
     },
-    "default_title": "Timer Extension Action"
+    "default_title": "Timer Extension Action",
+    "default_popup": "popup.html"
   }
 }
