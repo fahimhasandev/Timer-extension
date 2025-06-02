@@ -11,3 +11,5 @@ chrome.action.setBadgeText(
     console.log(`Finished setting badged text.`);
   }
 );
+
+// git commit --date="2025-month-day 14:00:00" -m "actions page set up"
