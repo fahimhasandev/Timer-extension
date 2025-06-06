@@ -5,10 +5,10 @@ submitBtn.addEventListener("click", () => {
   const name = nameInput.value;
 
   chrome.storage.sync.set({ name }).then(() => {
-    console.log("Value is set");
+    console.log(name);
   });
+});
 
-  chrome.storage.sync.get(["name"]).then((result) => {
-    console.log("Value currently is " + result.key);
-  });
+chrome.storage.sync.get(["name"], (res) => {
+  nameInput.value = res.name;
 });
