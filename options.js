@@ -10,5 +10,5 @@ submitBtn.addEventListener("click", () => {
 });
 
 chrome.storage.sync.get(["name"], (res) => {
-  nameInput.value = res.name;
+  nameInput.value = res.name ?? "??";
 });

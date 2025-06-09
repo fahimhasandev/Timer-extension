@@ -16,6 +16,6 @@ chrome.action.setBadgeText(
 
 // git commit --date="2025-month-day 14:00:00" -m "actions page set up"
 chrome.storage.sync.get(["name"]).then((result) => {
-  console.log("Value currently is " + result.name);
+  const name = result.name ?? "??" // if name is undefined, show ??
   nameElement.textContent = `Your name is: ${result.name}`;
 });
